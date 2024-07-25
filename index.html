@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachael's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="name">Rachael Freebourn</span>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#work" onclick="showSection('work')">Work</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="home" class="section">
+        <div class="video-container">
+            <div class="overlay-text">
+                <h1>Rachael Freebourn</h1>
+                <h3>Director/Cinematographer</h3>
+            </div>
+            <video autoplay muted loop>
+                <source src="media/rachael_movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="content-below-video">
+                <h2>Latest Films</h2>
+                <div class="boxes">
+                    <div class="box" id="films" onclick="toggleWorkSection('films')">Films</div>
+                    <div class="box" id="commercial" onclick="toggleWorkSection('commercial')">Commercial</div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ratchellllllll/reels/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@RachaelFreebourn" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/rachael-freebourn-a51275233/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:Rayfreeb@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ratchellllllll/reels/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@RachaelFreebourn" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/rachael-freebourn-a51275233/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:Rayfreeb@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <div id="work" class="section">
+        <div id="work-section" class="content" style="display:none;">
+            <h1>WORK</h1>
+            <div class="video-list">
+                <div class="work-container">
+                    <a href="https://www.youtube.com/watch?v=eX1k7OrkSZI" target="_blank">
+                        <img src="https://img.youtube.com/vi/eX1k7OrkSZI/maxresdefault.jpg" alt="Video Thumbnail" style="width: 100%; cursor: pointer">
+                    </a>
+                </div>
+                <div class="work-container">
+                    <video>
+                        <source src="media/girls_girls_girls.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <canvas id="thumbnail-canvas" class="thumbnail"></canvas>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video poster="media/METAMORPHASIS_OF_THE_SOUL_thumbnail.png">
+                        <source src="media/INDIE_FINAL_CUT_2024.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <canvas id="thumbnail-canvas" class="thumbnail"></canvas>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video poster="media/skate_like_a_girl.png">
+                        <source src="media/girl_skate_doc.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <canvas id="thumbnail-canvas" class="thumbnail"></canvas>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video poster="media/212_practice_shoot.png">
+                        <source src="media/212_practice_shoot.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video poster="media/WAM_thumbnail.png">
+                        <source src="media/wam_sf.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video>
+                        <source src="media/insync_promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video>
+                        <source src="media/ISYNC.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <a href="https://www.youtube.com/watch?v=cobTfhBBuUg" target="_blank">
+                        <img src="media/245_post_st_thumbnail.png" alt="Video Thumbnail" style="width: 100%; cursor: pointer">
+                    </a>
+                </div>
+                <div class="work-container">
+                    <video poster="media/truth_hurts.png">
+                        <source src="media/rachael_freeb.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ratchellllllll/reels/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@RachaelFreebourn" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/rachael-freebourn-a51275233/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:Rayfreeb@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div id="films-section" class="content" style="display:none;">
+            <h1>FILMS</h1>
+            <div class="video-list">
+                <div class="work-container">
+                    <a href="https://www.youtube.com/watch?v=eX1k7OrkSZI" target="_blank">
+                        <img src="https://img.youtube.com/vi/eX1k7OrkSZI/maxresdefault.jpg" alt="Video Thumbnail" style="width: 100%; cursor: pointer">
+                    </a>
+                </div>
+                <div class="work-container">
+                    <video>
+                        <source src="media/girls_girls_girls.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <canvas id="thumbnail-canvas" class="thumbnail"></canvas>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video poster="media/METAMORPHASIS_OF_THE_SOUL_thumbnail.png">
+                        <source src="media/INDIE_FINAL_CUT_2024.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <canvas id="thumbnail-canvas" class="thumbnail"></canvas>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video poster="media/skate_like_a_girl.png">
+                        <source src="media/girl_skate_doc.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <canvas id="thumbnail-canvas" class="thumbnail"></canvas>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ratchellllllll/reels/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@RachaelFreebourn" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/rachael-freebourn-a51275233/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:Rayfreeb@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div id="commercial-section" class="content" style="display:none;">
+            <h1>COMMERCIAL</h1>
+            <div class="video-list">
+                <div class="work-container">
+                    <video poster="media/212_practice_shoot.png">
+                        <source src="media/212_practice_shoot.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video poster="media/WAM_thumbnail.png">
+                        <source src="media/wam_sf.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video>
+                        <source src="media/insync_promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <video>
+                        <source src="media/ISYNC.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="work-container">
+                    <a href="https://www.youtube.com/watch?v=cobTfhBBuUg" target="_blank">
+                        <img src="media/245_post_st_thumbnail.png" alt="Video Thumbnail" style="width: 100%; cursor: pointer">
+                    </a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ratchellllllll/reels/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@RachaelFreebourn" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/rachael-freebourn-a51275233/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:Rayfreeb@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="section" style="display:none;">
+        <div class="content">
+            <h1>Rachael Freebourn</h1>
+            <img src="media/rachael.png" alt="Profile Picture" class="profile-pic">
+            <p>Rachael Freebourn, 21, received her BA in Film & Media from San Francisco State University. She will work anywhere but currently resides in San Francisco. Her life long passion for storytelling and directing has found a home in her unique film style and vision of the world. She is skilled in performative work, portraiture, short form media, and other areas. Rachael and her creative works are prepared to produce the greatest output for you, whatever your creative demands may be. Please use the contact tab to make a reservation or contact for any reason.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/ratchellllllll/reels/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@RachaelFreebourn" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/rachael-freebourn-a51275233/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:Rayfreeb@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section" style="display:none;">
+        <div class="contact-background">
+            <img src="media/contact-background.png" alt="Contact Background" class="contact-image">
+        </div>
+        <div class="contact-content">
+            <h1>Contact</h1>
+            <p>
+                <a href="mailto:Rayfreeb@gmail.com">Rayfreeb@gmail.com</a> | 206-259-1218 | San Francisco
+            </p>
+            <form id="contact-form" action="https://formspree.io/f/mqazenap" method="post" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>

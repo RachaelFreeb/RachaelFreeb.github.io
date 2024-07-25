@@ -1,0 +1,380 @@
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: Garamond, serif;
+    background-color: black;
+}
+
+.navbar {
+    margin-top: .5em;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.nav-left {
+    margin-left: 1em;
+    cursor: default;
+}
+
+.nav-left .name {
+    font-size: 1.5em; 
+}
+
+.nav-right {
+    margin-right: 2em;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    
+}
+
+.navbar ul li a:hover {
+    color: #a9a9a9;
+}
+
+.navbar a.active {
+    color: #a9a9a9;
+}
+
+.section {
+    display: none; /* Hide all sections by default */
+}
+
+#home .video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#home .overlay-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#home .overlay-text h1 {
+    font-size: 4em;
+    margin: 0.2em 0;
+}
+
+#home .overlay-text h3 {
+    font-size: 2em;
+    margin: 0.2em 0;
+}
+
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.work-container {
+    position: relative;
+    width: 800px; 
+    height: 450px; 
+    overflow: hidden; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.video-list video {
+    width: 100%;
+    height: auto; 
+    border: none; 
+    cursor: pointer; 
+    display: block;
+}
+
+.thumbnail {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    cursor: pointer; 
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+
+.work-container:hover .play-button {
+    color: #a9a9a9;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+    color: white;
+    background-color: black; 
+    text-align: center;
+    box-sizing: border-box; 
+    padding-left: 20em;
+    padding-right: 20em; 
+}
+
+.content h1 {
+    font-size: 5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.content p {
+    font-size: 1.2em; 
+    line-height: 1.5;
+}
+
+.profile-pic {
+    width: 50em;
+    height: 35em; 
+    margin: 20px 0; 
+}
+
+.content-below-video {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.content-below-video h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: white;
+    cursor: default;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 20px;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    aspect-ratio: 16/9;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.box:hover {
+    color: transparent;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#films {
+    background-image: url('media/skate_like_a_girl.png');
+}
+
+#commercial {
+    background-image: url('media/truth_hurts.png');
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.social-icons .icon {
+    color: white;
+    font-size: 2em;
+    transition: color 0.3s;
+}
+
+.social-icons .icon:hover {
+    color: #a9a9a9;
+}
+
+/* Contact section styles */
+.contact {
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: black;
+    color: white; 
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20em;
+    padding-right: 20em;
+    background-color: black;
+    color: white;
+    text-align: left; 
+    overflow-y: auto;
+}
+
+.contact-background {
+    width: 100%;
+}
+
+.contact-image {
+    width: 100%;
+    height: auto; 
+}
+
+.contact-content h1 {
+    font-size: 3em; 
+    font-weight: 900; 
+}
+
+.contact-content p {
+    font-size: 1.5em; 
+    font-weight: 900;
+    line-height: 1.5; 
+}
+
+.contact-content a {
+    text-decoration: underline; 
+    color: white;
+}
+
+/* Form styles */
+.contact-form {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%; 
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    gap: 2em; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 5px; 
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    font-size: 1em; 
+    border: none; 
+    border-bottom: 2px solid #ccc;
+    background-color: black;
+    color: white;
+    font-family: 'Garamond', serif
+}
+
+.contact-form input::placeholder, 
+.contact-form textarea::placeholder {
+    color: #ccc;
+    font-family: 'Garamond', serif;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1.2em; 
+    color: white;
+    background-color: white; 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 2em;
+    font-family: 'Garamond', serif;
+}
+
+.contact-form button:hover {
+    background-color: #f0f0f0;; 
+}
+
